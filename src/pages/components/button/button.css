@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.button {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  background-color: #fafafa;
+  padding: 0.2rem 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(150, 150, 150, 0.5);
+  /* black with 30% opacity */
+  cursor: pointer;
+}
+
+.button p {
+  color: #292828;
+  transition: opacity 200ms;
+}
+.button p:hover {
+  opacity: 0.5;
+  color: #3b3b3b;
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(20, 180, 20, 0.6);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.button-radius {
+  background-color: #fafafa;
+  border: 1px solid #caccac;
+  border-radius: 100%;
+  box-shadow: #caccac 2px 2px 0 0;
+  color: #caccac;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  padding:  0 8px; 
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%
+}
+
+ .button-radius:hover {
+  background-color: #fff;
+}
+
+.button-radius:active {
+  box-shadow: #caccac 1px 1px 0 0;
+  transform: translate(1px, 1px);
+}
+
+
+.icon-home {
+  color: #422800;
+}
